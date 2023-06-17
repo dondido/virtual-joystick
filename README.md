@@ -16,17 +16,17 @@ Check out the [demo here](https://dondido.github.io/virtual-joystick/).
 ```html
  <virtual-joystick></virtual-joystick>
 ```
-![Alt text](/docs/Static.gif "Static")
+![Alt text](/docs/Static.gif "Static" | width=320)
 ### Semi
 ```html
  <virtual-joystick data-mode="fixed"></virtual-joystick>
 ```
-![Alt text](/docs/Fixed.gif "Fixed")
+![Alt text](/docs/Fixed.gif "Fixed" | width=320)
 ### Semi
 ```html
  <virtual-joystick data-mode="semi"></virtual-joystick>
 ```
-![Alt text](/docs/Semi.gif "Semi")
+![Alt text](/docs/Semi.gif "Semi" | width=320)
 ### Dynamic
 ```html
  <virtual-joystick data-mode="semi"></virtual-joystick>
