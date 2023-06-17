@@ -4,11 +4,12 @@
 ## Gist
 Virtual Joystick is simple reusable, custom web element for touch-enabled user interfaces where the functionality is strongly encapsulated from the rest of the code.
 
-![Alt text](/docs/phone.png "Virtual joystick on a mobile phone")
+<img src="/docs/phone.png" width="520px" src="Virtual joystick on a mobile phone" >
 
 The rotation angle is measured in both radians and degrees counterclockwise from horizontal, and measures the rotation of the primary axis from horizontal.
 
-![Alt text](/docs/unit-circle-chart-degrees.svg "Joystick unit circle chart")
+<img src="/docs/unit-circle-chart-degrees.svg" width="460px" src="Joystick unit circle chart" >
+
 ## Demo
 Check out the [demo here](https://dondido.github.io/virtual-joystick/).
 ## Usage
@@ -16,24 +17,110 @@ Check out the [demo here](https://dondido.github.io/virtual-joystick/).
 ```html
  <virtual-joystick></virtual-joystick>
 ```
-![Alt text|320](/docs/Static.gif "Static")
+
+<img src="/docs/Static.gif" width="400px" src="Static" >
+
 ### Semi
 ```html
  <virtual-joystick data-mode="fixed"></virtual-joystick>
 ```
-![Alt text](/docs/Fixed.gif "Fixed")
+
+<img src="/docs/Fixed.gif" width="400px" src="Fixed" >
+
 ### Semi
 ```html
  <virtual-joystick data-mode="semi"></virtual-joystick>
 ```
-![Alt text](/docs/Semi.gif "Semi")
+
+<img src="/docs/Semi.gif" width="400px" src="Semi" >
+
 ### Dynamic
 ```html
  <virtual-joystick data-mode="dynamic"></virtual-joystick>
 ```
-![Alt text](/docs/Dynamic.gif "Dynamic")
-### Locked
+
+<img src="/docs/Dynamic.gif" width="400px" src="Dynamic" >
+
+### Locked X or Y Axis
 ```html
  <virtual-joystick data-lock="y"></virtual-joystick>
 ```
-![Alt text](/docs/Locked.gif "Locked")
+
+<img src="/docs/Locked.gif" width="400px" src="Locked" >
+
+### Custom Shape
+```html
+ <virtual-joystick data-shape="box"></virtual-joystick>
+```
+```css
+virtual-joystick::part(joystick),
+virtual-joystick::part(joystick):before, 
+virtual-joystick::part(joystick):after {
+    border-radius: 0;
+}
+```
+
+<img src="/docs/Square.gif" width="400px" src="Custom Shape" >
+
+### Custom Transition
+```html
+ <virtual-joystick></virtual-joystick>
+```
+```css
+virtual-joystick::part(joystick),
+virtual-joystick::part(joystick):before,
+virtual-joystick::part(joystick):after {
+    border-radius: 14px;
+}
+virtual-joystick::part(joystick):after {
+    transition-timing-function: cubic-bezier(.17, .67, .52, 1.48);
+}
+```
+
+<img src="/docs/Transition.gif" width="400px" src="Custom Transition" >
+
+### Custom Style
+```html
+ <virtual-joystick></virtual-joystick>
+```
+```css
+virtual-joystick::part(joystick) {
+    background-color: rgba(31, 223, 108, 0.4);
+}
+virtual-joystick::part(joystick):after {
+    background-color: rgba(31, 223, 108, 0.6);
+}
+virtual-joystick::part(joystick),
+virtual-joystick::part(joystick):before,
+virtual-joystick::part(joystick):after {
+    border: 0;
+}
+```
+
+<img src="/docs/Style.gif" width="400px" src="Custom Style" >
+
+### Slotted Elements
+```html
+ <virtual-joystick>
+  <div>...</div>
+ </virtual-joystick>
+```
+
+<img src="/docs/Slotted.gif" width="400px" src="Slotted Elements" >
+
+### Custom Size
+```html
+ <virtual-joystick></virtual-joystick>
+```
+virtual-joystick {
+    --radius: 60px;
+}
+virtual-joystick::part(joystick),
+virtual-joystick::part(joystick):before,
+virtual-joystick::part(joystick):after {
+    background-color: transparent;
+    border: 7px solid #673ab7;
+}
+```
+<img src="/docs/Size.gif" width="400px" src="Custom Size" >
+
