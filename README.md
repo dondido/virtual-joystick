@@ -29,6 +29,11 @@ Check out the [demo here](https://dondido.github.io/virtual-joystick/).
 ![Alt text](/docs/Semi.gif "Semi" | width=320)
 ### Dynamic
 ```html
- <virtual-joystick data-mode="semi"></virtual-joystick>
+ <virtual-joystick data-mode="dynamic"></virtual-joystick>
 ```
 ![Alt text](/docs/Dynamic.gif "Dynamic")
+### Locked
+```html
+ <virtual-joystick data-lock="y"></virtual-joystick>
+```
+![Alt text](/docs/Locked.gif "Locked" | width=320)
