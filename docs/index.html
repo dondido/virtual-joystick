@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Virtual Joystick Examples</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style></style>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Virtual Joystick Examples</h1>
+    <div class="container">
+        <div class="joystick-container">
+            <h2>Static</h2>
+            <div class="playground">
+                <virtual-joystick></virtual-joystick>
+            </div>
+            <div class="output"></div>
+        </div>
+        <div class="joystick-container">
+            <h2>Semi</h2>
+            <div class="playground dynamic">
+                <virtual-joystick data-mode="semi"></virtual-joystick>
+            </div>
+            <div class="output"></div>
+        </div>
+        <div class="joystick-container">
+            <h2>Dynamic</h2>
+            <div class="playground dynamic">
+               <virtual-joystick data-mode="dynamic"></virtual-joystick>
+            </div>
+            <div class="output"></div>
+        </div>
+        <div class="joystick-container">
+            <h2>Locked X or Y Axis</h2>
+            <div class="playground">
+                <virtual-joystick data-lock="y"></virtual-joystick>
+            </div>
+            <div class="output"></div>
+        </div>
+        <div class="joystick-container">
+            <h2>Custom Shape</h2>
+            <div class="playground">
+                <virtual-joystick data-shape="box" class="square"></virtual-joystick>
+            </div>
+            <div class="output"></div>
+        </div>
+        <div class="joystick-container">
+            <h2>Custom Transition</h2>
+            <div class="playground">
+                <virtual-joystick data-shape="box" class="bounce"></virtual-joystick>
+            </div>
+            <div class="output"></div>
+        </div>
+        <div class="joystick-container">
+            <h2>Custom Style</h2>
+            <div class="playground">
+                <virtual-joystick class="custom"></virtual-joystick>
+            </div>
+            <div class="output"></div>
+        </div>
+        <div class="joystick-container">
+            <h2>Slotted Elements</h2>
+            <div class="playground">
+                <virtual-joystick class="slotted">
+                    <svg height="20" width="20" class="arrow-bottom"><polygon points="0,0 20,0 10,20" class="arrow"></polygon></svg>
+                    <svg height="20" width="20" class="arrow-right"><polygon points="0,0 20,0 10,20" class="arrow"></polygon></svg>
+                    <svg height="20" width="20" class="arrow-top"><polygon points="0,0 20,0 10,20" class="arrow"></polygon></svg>
+                    <svg height="20" width="20" class="arrow-left"><polygon points="0,0 20,0 10,20" class="arrow"></polygon></svg>
+                </virtual-joystick>
+            </div>
+            <div class="output"></div>
+        </div>
+        <div class="joystick-container">
+            <h2>Custom Size</h2>
+            <div class="playground">
+                <virtual-joystick class="size"></virtual-joystick>
+            </div>
+            <div class="output"></div>
+        </div>
+        <div class="joystick-container">
+            <h2>Fixed</h2>
+            <div class="playground fixed">
+                <virtual-joystick data-mode="fixed"></virtual-joystick>
+            </div>
+            <div class="output"></div>
+        </div>
+    </div>
+	<script type="module" src="virtual-joystick.js"></script>
+	<script type="module" src="index.js"></script>
+</body>
+</html>

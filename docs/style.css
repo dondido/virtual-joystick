@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    margin-block: 0 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.joystick-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+.playground {
+    display: flex;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.fixed,
+.dynamic {
+    border: 1px dashed;
+    & virtual-joystick {
+        width: 100%;
+        height: 100%;
+    }
+}
+.dynamic:before {
+    content: "Tap here to start";
+    position: absolute;
+}
+.container > *:nth-child(12n+1) {
+    background-color: #748ffc;
+}
+.container > *:nth-child(12n+2) {
+    background-color: #9775fa;
+}
+.container > *:nth-child(12n+3) {
+    background-color: #da77f2;
+}
+.container > *:nth-child(12n+4) {
+    background-color: #f783ac;
+}
+.container > *:nth-child(12n+5) {
+    background-color: #ff8787;
+}
+.container > *:nth-child(12n+6) {
+    background-color: #ffa94d;
+}
+.container > *:nth-child(12n+7) {
+    background-color: #ffd43b;
+}
+.container > *:nth-child(12n+8) {
+    background-color: #a9e34b;
+}
+.container > *:nth-child(12n+9) {
+    background-color: #69db7c;
+}
+.container > *:nth-child(12n+10) {
+    background-color: #38d9a9;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(320px, calc(33% - 24px)), 1fr));
+    grid-gap: 12px;
+}
+.square::part(joystick),
+.square::part(joystick):before,
+.square::part(joystick):after {
+    border-radius: 0;
+}
+.bounce::part(joystick),
+.bounce::part(joystick):before,
+.bounce::part(joystick):after {
+    border-radius: 14px;
+}
+.bounce::part(joystick):after {
+    transition-timing-function: cubic-bezier(.17, .67, .52, 1.48);
+}
+.bounce::part(active):after {
+    transition-timing-function: ease;
+}
+.custom::part(joystick) {
+    background-color: rgba(31, 223, 108, 0.4);
+}
+.custom::part(joystick):after {
+    background-color: rgba(31, 223, 108, 0.6);
+}
+.slotted::part(joystick):after {
+    z-index: 1;
+}
+.arrow {
+    fill: rgba(255, 255, 255, 0.4);
+    stroke:gray;
+    stroke-width: 1px;
+}
+.arrow-bottom {
+    left: 55px;
+    top: 100px;
+    position: absolute;
+}
+.arrow-right {
+    left: 100px;
+    top: 55px;
+    rotate: 270deg;
+    position: absolute;
+}
+.arrow-top {
+    left: 55px;
+    top: 5px;
+    rotate: 180deg;
+    position: absolute;
+}
+.arrow-left {
+    left: 5px;
+    top: 55px;
+    rotate: 90deg;
+    position: absolute;
+}
+.custom::part(joystick),
+.custom::part(joystick):before,
+.custom::part(joystick):after {
+    border: 0;
+}
+.size {
+    --radius: 60px;
+}
+.size::part(joystick),
+.size::part(joystick):before,
+.size::part(joystick):after {
+    background-color: transparent;
+    border: 7px solid #673ab7;
+}
+.size::part(joystick):before,
+.size::part(joystick):after {
+    width: 70px;
+    height: 70px;
+}
+.size::part(joystick) {
+    border-width: 2px;
+}
+.size::part(joystick):before {
+    border-width: 4px;
+}
+.output {
+    padding-left: 50px;
+    white-space: pre;
+}
+[data-mode="fixed"]::part(joystick) {
+    transform: translate(40px, 40px);
+}
