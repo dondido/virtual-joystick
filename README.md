@@ -16,7 +16,7 @@ Check out the [demo here](https://dondido.github.io/virtual-joystick/).
 ```html
  <virtual-joystick></virtual-joystick>
 ```
-![Alt text](/docs/Static.gif "Static")
+![Alt text|320](/docs/Static.gif "Static")
 ### Semi
 ```html
  <virtual-joystick data-mode="fixed"></virtual-joystick>
