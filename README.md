@@ -186,3 +186,25 @@ Locks joystick's movement either to X (horizontal) or Y (vertical) axis.
 ### `data-shape` defaults to 'circle'
 The shape of region within which joystick can move. `'circle'` creates circle region for joystick movement and `'box'` creates square region for joystick movement.
 
+## Events
+Events are fired to notify code of "interesting changes" that may affect code execution. These arise from user interactions with the joystick component. Event handlers can be used to handle and verify user input and actions:
+
+```javascript
+const $joystick = document.querySelector('virtual-joystick');
+ const handleKeyEvents = () => {
+     $joystick.dataset.release.split('').forEach(()=>{});
+     $joystick.dataset.capture.split('').forEach(()=>{});
+ };
+ $joystick.addEventListener('joystickdown', handleKeyEvents);
+ $joystick.addEventListener('joystickmove', handleKeyEvents);
+ $joystick.addEventListener('joystickup', handleKeyEvents);
+```
+
+## Outputs
+Various 'data-*' output attributes are used to represent the result of calculations performed by the component.
+
+### `data-degree`
+Counter clockwise angle measured in degrees from the positive X-axis
+
+### `data-radians`
+Counter clockwise angle measured in radians from the positive X-axis
