@@ -138,6 +138,7 @@ virtual-joystick::part(joystick):after {
 ```html
  <virtual-joystick></virtual-joystick>
 ```
+```css
 virtual-joystick {
     --radius: 60px;
 }
@@ -148,5 +149,40 @@ virtual-joystick::part(joystick):after {
     border: 7px solid #673ab7;
 }
 ```
+
 <img src="/docs/Size.gif" width="400px" src="Custom Size" >
+
+## Options
+The data-* attribute is used to apply custom data options to the component. This allows us to configure the joystick component in different ways:
+
+### `data-threshold` defaults to 0
+This is the strength needed to trigger a directional event. The 'threshold' value range is between 0 and 1.
+
+### `data-mode` defaults to 'static'.
+Three modes are possible :
+
+#### `'static'`
+- the joystick element is positioned at the normal flow of document
+- each new touch triggers a new direction.
+- **cannot** be multitouch.
+
+#### `'fixed'`
+- the joystick element is positioned at the normal flow of document
+- allows the joystick to be activated on touch outside of the joystick area.
+- **can** be multitouch.
+
+#### `'semi'`
+- the joystick is reposition on every touch event.
+- **cannot** be multitouch.
+
+#### `'dynamic'`
+- the joystick is reposition on every touch event.
+- the component is faded-out when released but not destroyed.
+- **can** be multitouch.
+
+### `data-lock` defaults to none
+Locks joystick's movement either to X (horizontal) or Y (vertical) axis.
+
+### `data-shape` defaults to 'circle'
+The shape of region within which joystick can move. `'circle'` creates circle region for joystick movement and `'box'` creates square region for joystick movement.
 
