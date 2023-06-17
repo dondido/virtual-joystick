@@ -6,12 +6,38 @@ Virtual Joystick is simple reusable, custom web element for touch-enabled user i
 
 <img src="/docs/phone.png" width="520px" src="Virtual joystick on a mobile phone" >
 
+That's not even the best part, this component is library-agnostic which means it can be added to any JavaScript project irrespective of the framework/library.
+
 The rotation angle is measured in both radians and degrees counterclockwise from horizontal, and measures the rotation of the primary axis from horizontal.
 
 <img src="/docs/unit-circle-chart-degrees.svg" width="460px" src="Joystick unit circle chart" >
 
 ## Demo
 Check out the [demo here](https://dondido.github.io/virtual-joystick/).
+## Import
+
+Import it the way you want into your project :
+
+```javascript
+// CommonJS
+var manager = require('virtual-joystick');
+```
+
+```javascript
+// Module
+import * from 'virtual-joystick';
+```
+
+```html
+<!-- Classic script -->
+<script src="./virtual-joystick.js"></script>
+```
+
+```html
+<!-- Module script -->
+<script type="module" src="./virtual-joystick.js">
+```
+
 ## Usage
 ### Static
 ```html
@@ -20,7 +46,7 @@ Check out the [demo here](https://dondido.github.io/virtual-joystick/).
 
 <img src="/docs/Static.gif" width="400px" src="Static" >
 
-### Semi
+### Fixed
 ```html
  <virtual-joystick data-mode="fixed"></virtual-joystick>
 ```
@@ -46,7 +72,7 @@ Check out the [demo here](https://dondido.github.io/virtual-joystick/).
  <virtual-joystick data-lock="y"></virtual-joystick>
 ```
 
-<img src="/docs/Locked.gif" width="400px" src="Locked" >
+<img src="/docs/Lock.gif" width="400px" src="Locked" >
 
 ### Custom Shape
 ```html
