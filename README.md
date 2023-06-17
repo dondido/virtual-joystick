@@ -10,4 +10,25 @@ The rotation angle is measured in both radians and degrees counterclockwise from
 
 ![Alt text](/docs/unit-circle-chart-degrees.svg "Joystick unit circle chart")
 ## Demo
-Check out the [demo here](http://yoannmoinet.github.io/nipplejs/#demo).
+Check out the [demo here](https://dondido.github.io/virtual-joystick/).
+## Usage
+### Static
+```html
+ <virtual-joystick></virtual-joystick>
+```
+![Alt text](/docs/Static.gif "Static")
+### Semi
+```html
+ <virtual-joystick data-mode="fixed"></virtual-joystick>
+```
+![Alt text](/docs/Fixed.gif "Fixed")
+### Semi
+```html
+ <virtual-joystick data-mode="semi"></virtual-joystick>
+```
+![Alt text](/docs/Semi.gif "Semi")
+### Dynamic
+```html
+ <virtual-joystick data-mode="semi"></virtual-joystick>
+```
+![Alt text](/docs/Dynamic.gif "Dynamic")
