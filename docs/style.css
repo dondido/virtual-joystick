@@ -23,6 +23,7 @@ h2 {
     min-height: 150px;
     justify-content: center;
     align-items: center;
+    user-select: none; 
 }
 .joystick-container:target:before {
     content: '';
