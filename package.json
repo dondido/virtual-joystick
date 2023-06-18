@@ -1,0 +1,29 @@
+{
+  "name": "virtual-joystick",
+  "version": "1.0.0",
+  "description": "Virtual Joystick is a simple, reusable custom web element for touch-enabled user interfaces.",
+  "main": "virtual-joystick.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dondido/virtual-joystick.git"
+  },
+  "keywords": [
+    "Virtual",
+    "Joystick",
+    "Mobile",
+    "Game",
+    "Development"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dondido/virtual-joystick/issues"
+  },
+  "homepage": "https://github.com/dondido/virtual-joystick#readme"
+}

@@ -6,7 +6,8 @@ Virtual Joystick is a simple, reusable custom web element for touch-enabled user
 
 <img src="/docs/phone.png" width="520px" src="Virtual joystick on a mobile phone" >
 
-- Very light weight (less than 5kb minified).
+- Very light weight (less than 4kb minified).
+- Perfect for mobile game development
 - Uses default JavaScript APIs, no dependencies.
 - Configurable and extendable.
 - Library-agnostic, which means it can be added to any JavaScript project regardless of the framework or library being used.
