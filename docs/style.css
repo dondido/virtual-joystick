@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 h2 {
+    pointer-events: none;
     margin-block: 0 20px;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -156,6 +157,7 @@ h2 {
     border-width: 4px;
 }
 .output {
+    pointer-events: none;
     user-select: none; 
     padding-left: 50px;
     white-space: pre;
