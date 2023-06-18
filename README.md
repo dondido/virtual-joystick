@@ -217,13 +217,13 @@ const $joystick = document.querySelector('virtual-joystick');
  $joystick.addEventListener('joystickmove', handleKeyEvents);
  $joystick.addEventListener('joystickup', handleKeyEvents);
 ```
-### 'joystickdown'
+### `'joystickdown'`
 The 'joystickdown' event is fired at an element when the virtual joystick is pressed while the pointer is located within specified area.
 
-### 'joystickmove'
+### `'joystickmove'`
 The 'joystickmove' event is fired when a pointer changes coordinates, and the pointer has not been canceled by a browser touch-action.
 
-### 'joystickup'
+### `'joystickup'`
 The 'joystickup' event is fired at an element when the virtual joystick is released while the pointer is located within specified area. This event is the counterpoint to 'joystickdown' event.
 
 ## Outputs
@@ -247,4 +247,14 @@ The attribute value is one of the eight points of compass rose with ordinal and 
 ### `data-force`
 A float that represents the distance between the center and a vertex. This is a value between 0.0 and 1.0 when inside and above 1.0 when outside.
 
+### `data-distance`
+An integer that represents the distance between the center of the component and the focal point. Distance in measured only within the component in pixels.
 
+### `data-distance`
+An integer that represents the distance between the center of the component and the focal point. Distance in measured only within a specified area in pixels. Matches the 'data-distance' value when pointer is inside the joystick area.
+
+### `data-x`
+A float that represents the horizontal coordinate within the application's viewport at which virtual joystick event occurred
+
+### `data-y`
+A float that represents the horizontal coordinate within the application's viewport at which virtual joystick event occurred
