@@ -6,11 +6,11 @@ Virtual Joystick is a simple, reusable custom web element for touch-enabled user
 
 <img src="/docs/phone.png" width="520px" src="Virtual joystick on a mobile phone" >
 
-But wait, there's more! This component is library-agnostic, which means it can be added to any JavaScript project regardless of the framework or library being used.
+- Very light weight (less than 5kb minified).
+- Uses default JavaScript APIs, no dependencies.
+- Configurable and extendable.
+- Library-agnostic, which means it can be added to any JavaScript project regardless of the framework or library being used.
 
-The rotation angle is measured in both radians and degrees counterclockwise from horizontal, and measures the rotation of the primary axis from horizontal.
-
-<img src="/docs/unit-circle-chart-degrees.svg" width="460px" src="Joystick unit circle chart" >
 
 ## Import
 
@@ -237,13 +237,19 @@ setInterval(log, 1000);
 ```
 
 ### `data-degree`
-This represents the counter-clockwise angle measured in degrees from the positive X-axis.
+This represents the counter-clockwise angle measured in degrees from the positive X-axis *.
 
 ### `data-radians`
-This represents the counter-clockwise angle measured in radians from the positive X-axis.
+This represents the counter-clockwise angle measured in radians from the positive X-axis *.
+
+_* The rotation angle is measured in both radians and degrees counterclockwise from horizontal, and measures the rotation of the primary axis from horizontal._
+
+<img src="/docs/counterclockwisejoystick.png" width="400px" src="Counter clockwise joystick" >
 
 ### `data-direction`
 This matches one of the eight principal winds, which include the four cardinal directions (N, E, S, W) and the four "intercardinal" or "ordinal directions" (NE, SE, SW, NW), at 45° intervals. The four cardinal directions (N, S, E, W) are the main compass directions. Relative to the north, the east, south, and west directions are at 90° intervals in the clockwise direction. The ordinal directions (also called intercardinal directions) are northeast (NE), southeast (SE), southwest (SW), and northwest (NW).
+
+<img src="/docs/unit-circle-chart-degrees.svg" width="460px" src="Joystick unit circle chart" >
 
 ### `data-release`
 This attribute value represents one of the eight points of the compass rose with ordinal and cardinal directions: N, NE, E, SE, S, SW, W, and NW. It indicates which point transitions from an active to an inactive state.
