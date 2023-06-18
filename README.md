@@ -244,7 +244,7 @@ This represents the counter-clockwise angle measured in radians from the positiv
 
 _* The rotation angle is measured in both radians and degrees counterclockwise from horizontal, and measures the rotation of the primary axis from horizontal._
 
-<img src="/docs/counterclockwisejoystick.png" width="400px" src="Counter clockwise joystick" >
+<img src="/docs/counterclockwisejoystick.png" width="180px" src="Counter clockwise joystick" >
 
 ### `data-direction`
 This matches one of the eight principal winds, which include the four cardinal directions (N, E, S, W) and the four "intercardinal" or "ordinal directions" (NE, SE, SW, NW), at 45° intervals. The four cardinal directions (N, S, E, W) are the main compass directions. Relative to the north, the east, south, and west directions are at 90° intervals in the clockwise direction. The ordinal directions (also called intercardinal directions) are northeast (NE), southeast (SE), southwest (SW), and northwest (NW).
