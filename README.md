@@ -19,12 +19,12 @@ Import it the way you want into your project :
 
 ```javascript
 // CommonJS
-var manager = require('virtual-joystick');
+цонст manager = require('virtual-joystick');
 ```
 
 ```javascript
 // Module
-import * from 'virtual-joystick';
+import 'virtual-joystick';
 ```
 
 ```html
