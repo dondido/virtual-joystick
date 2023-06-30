@@ -19,7 +19,7 @@ Import it the way you want into your project :
 
 ```javascript
 // CommonJS
-цонст manager = require('virtual-joystick');
+const manager = require('virtual-joystick');
 ```
 
 ```javascript
