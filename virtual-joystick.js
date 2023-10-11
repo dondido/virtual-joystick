@@ -10,6 +10,7 @@ window.customElements.define('virtual-joystick', class VirtualJoystick extends H
             display: block;
             width: var(--size);
             height: var(--size);
+            touch-action: none;
         }
         slot {
             --x: var(--radius);
@@ -222,7 +223,7 @@ window.customElements.define('virtual-joystick', class VirtualJoystick extends H
             this.#setXY(this.#r, this.#r);
             this.dispatchEvent(new CustomEvent('joystickup'));
         }
-        const pointerIndex = this.#pointers.indexOf(event.pointerId)
+        const pointerIndex = this.#pointers.indexOf(event.pointerId);
         if (pointerIndex !== -1) {
             this.#pointers.splice(pointerIndex, 1);
         }

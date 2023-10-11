@@ -1,6 +1,6 @@
 {
   "name": "virtual-joystick",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Virtual Joystick is a simple, reusable custom web element for touch-enabled user interfaces.",
   "main": "virtual-joystick.js",
   "directories": {
